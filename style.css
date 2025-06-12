@@ -1,0 +1,146 @@
+
+@font-face {
+     font-family: 'Poppins';
+     src: url('Poppins-Black.ttf')format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+*{
+     margin:0px ;
+     font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: #47659b;
+}
+.main{
+     display: block;
+     margin:auto;
+     background-color: white;
+     width: 600px;
+     border-radius: 4px;
+     font-size: 16px;
+}
+.formacao{
+     margin: 0px;
+     padding: 10px;
+     text-align: justify;
+     display: block;
+     font-size: 16px;
+     color: #304c81;
+
+}
+a{
+     text-decoration: none;
+     color: black;
+}
+.titulo{
+     padding-bottom: 10px;
+     font-size: medium;
+     color: #304c81;
+
+}
+.detalhe{
+     background-color: rgb(36, 36, 183);
+     width:580px;
+     height: 2px;
+     position: absolute;
+}
+.descricao{
+
+    position: relative;
+    color: #1f3d76;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
+    color: #304c81;
+}
+.descricao::after{
+ content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #1f3d76;
+  transform: scaleX(0); /* começa invisível */
+  transform-origin: left; /* começa da esquerda */
+  transition: transform 0.3s ease;
+}
+.descricao:hover::after{
+      cursor: pointer;
+      transform: scaleX(1); 
+
+}
+.principal{
+     padding-top:30px;
+     margin: 0px;
+     text-align: center;
+     font-family: 'Poppins';
+     color: #304c81;
+     font-size: 30px;
+
+}
+
+p{
+     text-align: justify;
+}
+.habilidades {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  color: #1f3d76;
+}
+.habilidades h3 {
+  margin-top: 10px;
+  color: #304c81;
+  font-size: 16px;
+  display: flex;
+  align-items:end;
+}
+
+.habilidades h3 i {
+  margin-right: 10px;
+  color: #1f3d76;
+}
+.habilidades p {
+  margin-left: 26px;
+  font-size: 16px;
+  color: #3e588b;
+}
+.dados{
+     display:grid;
+     grid-template-columns: 0.5fr 2fr;
+     gap: 10px;
+     max-width: 600px;
+     padding: 10px;
+     color: #304c81;
+     margin-top: 10px; 
+     text-align: left;
+     position:relative;
+     display: grid;
+     justify-items: end;
+     justify-self: start;
+}
+.dados a {
+     color: #1f3d76;
+}
+.dados h1{
+     margin-top: 10px;
+     font-size: 16px;
+     align-items: end;
+}
+.dados p{
+     justify-self: start;
+     justify-content: start;
+     align-items: start;
+}
+.dados img{
+     width: 30px;
+     height: 32px;
+     margin: 0px;
+     cursor: pointer;
+     border-radius: 5px ;
+}
+ 
